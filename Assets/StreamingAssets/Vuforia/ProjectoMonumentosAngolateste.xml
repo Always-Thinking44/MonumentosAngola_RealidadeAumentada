@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="mbanza" size="1.000000 0.666667" />
+    <ImageTarget name="montanha_luvili_vuforia_target" size="1.000000 0.667276" />
+    <ImageTarget name="monumento_soldados_vuforia_target" size="1.000000 1.105263" />
+    <ImageTarget name="angola" size="1.000000 0.800971" />
+    <ImageTarget name="mwana" size="1.000000 1.369979" />
+    <ImageTarget name="palanca" size="1.000000 1.000000" />
+    <ImageTarget name="marimba" size="1.000000 0.865546" />
+    <ImageTarget name="pensador" size="1.000000 1.738095" />
+  </Tracking>
+</QCARConfig>

@@ -1,0 +1,73 @@
+# ---------------------------------------------------------------
+# .gitignore para projeto Unity
+# Baseado em https://github.com/github/gitignore/blob/main/Unity.gitignore
+# ---------------------------------------------------------------
+
+# Pastas geradas pelo Unity (nunca versionar)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Dados de runtime do Vuforia (gerados automaticamente)
+/[Qq][Cc][Aa][Rr]/
+
+# Ficheiros .meta só devem ser ignorados quando o asset também é
+!/[Aa]ssets/**/*.meta
+
+# Plugins da Asset Store / JetBrains (gerados automaticamente)
+# /[Aa]ssets/AssetStoreTools*
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Caches de IDE
+.vs/
+.gradle/
+.idea/
+
+# Soluções e projetos gerados pelo Unity / IDE
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# .meta de ficheiros gerados
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Relatório de crash do Unity
+sysinfo.txt
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crashlytics
+crashlytics-build.properties
+
+# Addressables compilados
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Assets temporários gerados pelo Android
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
