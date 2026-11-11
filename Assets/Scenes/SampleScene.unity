@@ -7071,7 +7071,7 @@ MonoBehaviour:
   rotacaoInicial: {x: 90, y: 180, z: 0}
   tamanhoAlvo: 3.2
   velocidadeGiro: 20
-  narracao: {fileID: 0}
+  narracao: {fileID: 8300000, guid: f1656962eeb59a44c8f6ae94770cf8e7, type: 3}
   musicaFundo: {fileID: 0}
   esconderAoPerderTarget: 1
 --- !u!114 &2072391114
@@ -7154,7 +7154,7 @@ Transform:
   m_GameObject: {fileID: 2072391111}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.17, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
