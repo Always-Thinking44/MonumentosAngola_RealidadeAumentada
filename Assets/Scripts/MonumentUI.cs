@@ -75,7 +75,9 @@ public class MonumentUI : MonoBehaviour
 
     public void AoPerderTarget(MonumentTarget t)
     {
-        if (esconderAoPerderTarget && atual == t) Fechar();
+        if (atual != t) return;
+
+        Fechar();
     }
 
     // ---- Botões ----

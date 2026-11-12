@@ -18,6 +18,9 @@ public class MonumentTarget : MonoBehaviour
     public AudioClip narracao;
     public AudioClip musicaFundo;
 
+    [Header("Comportamento")]
+    public bool esconderAoPerderTarget = true;
+
     ObserverBehaviour observer;
 
     void Awake()
@@ -33,13 +36,18 @@ public class MonumentTarget : MonoBehaviour
     }
 
     void OnStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
-    {
-        // Só TRACKED: EXTENDED_TRACKED mantinha o painel depois de perder a imagem
-        bool detectado = status.Status == Status.TRACKED;
+{
+    bool detectado = status.Status == Status.TRACKED;
 
-        if (detectado)
+    if (detectado)
+    {
+        if (MonumentUI.Instance != null)
             MonumentUI.Instance.Mostrar(this);
-        else
+    }
+    else
+    {
+        if (esconderAoPerderTarget && MonumentUI.Instance != null)
             MonumentUI.Instance.AoPerderTarget(this);
     }
+}
 }
