@@ -162,8 +162,9 @@ MonoBehaviour:
   localizacao: Planalto Central, Angola
   modeloPrefab: {fileID: 8771091787928289351, guid: f676e97e8d7704c4db86689bb1357ba8, type: 3}
   rotacaoInicial: {x: 0, y: 0, z: 0}
-  narracao: {fileID: 0}
+  narracao: {fileID: 8300000, guid: 46bc1392eed33034ba2f1c07c634ca9b, type: 3}
   musicaFundo: {fileID: 0}
+  esconderAoPerderTarget: 1
 --- !u!114 &24922262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,9 +773,10 @@ MonoBehaviour:
   data: Descrita em 1916
   localizacao: Malanje (Cangandala e Luando)
   modeloPrefab: {fileID: -6689036041284674117, guid: f8ce6b3af4b5bd0428f9caace47f6d4f, type: 3}
-  rotacaoInicial: {x: 0, y: 0, z: 0}
+  rotacaoInicial: {x: -90, y: 0, z: 0}
   narracao: {fileID: 8300000, guid: 8faf30ec2b6edac4eb06f6d7353b5cb5, type: 3}
-  musicaFundo: {fileID: 0}
+  musicaFundo: {fileID: 8300000, guid: 13a8a589dd1bb7849b613e0dcf6cd9cc, type: 3}
+  esconderAoPerderTarget: 1
 --- !u!114 &266832349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -958,18 +960,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonumentTarget
   nome: Soldado Desconhecido
-  descricao: "Soldado Desconhecido, em Luanda, presta homenagem aos soldados tombados
-    pela p\xE1tria. Fica na Marginal de Luanda, entre os Correios de Angola e o Comando
-    da Marinha de Guerra, e foi inaugurado em Setembro de 2017. Tem 23 metros de
-    altura e uma rampa com 50 metros de comprimento. No topo, uma chama sobe atrav\xE9s
-    de uma estrela dourada, que simboliza a mais alta condecora\xE7\xE3o concedida
-    aos soldados tombados."
+  descricao: "Monumento ao Soldado Desconhecido, em Luanda, presta homenagem aos
+    soldados tombados pela p\xE1tria. Fica na Marginal de Luanda, entre os Correios
+    de Angola e o Comando da Marinha de Guerra, e foi inaugurado em Setembro de 2017.
+    Tem 23 metros de altura e uma rampa com 50 metros de comprimento. No topo, uma
+    chama sobe atrav\xE9s de uma estrela dourada, que simboliza a mais alta condecora\xE7\xE3o
+    concedida aos soldados tombados."
   data: Inaugurado em Set. 2017
   localizacao: Marginal de Luanda
   modeloPrefab: {fileID: 8771091787928289351, guid: 97d56f169bd40264e8b96ad019d9dc15, type: 3}
   rotacaoInicial: {x: 0, y: 0, z: 0}
-  narracao: {fileID: 0}
-  musicaFundo: {fileID: 0}
+  narracao: {fileID: 8300000, guid: 2cff4193f967dd54abb20d037e6152b7, type: 3}
+  musicaFundo: {fileID: 8300000, guid: f6fce791449e2ad46a99245c4f8c9a42, type: 3}
+  esconderAoPerderTarget: 1
 --- !u!114 &358330035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2516,7 +2519,8 @@ MonoBehaviour:
   modeloPrefab: {fileID: -6689036041284674117, guid: d01caaa8ae9596144b2cd0272cf47e24, type: 3}
   rotacaoInicial: {x: 0, y: 0, z: 0}
   narracao: {fileID: 8300000, guid: ebffb3800f1df974a8f32433e26bc325, type: 3}
-  musicaFundo: {fileID: 0}
+  musicaFundo: {fileID: 8300000, guid: 13a8a589dd1bb7849b613e0dcf6cd9cc, type: 3}
+  esconderAoPerderTarget: 0
 --- !u!114 &716941872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5147,6 +5151,7 @@ MonoBehaviour:
   rotacaoInicial: {x: 0, y: 0, z: 0}
   narracao: {fileID: 8300000, guid: 197325a9c53846942bae8a38a861d669, type: 3}
   musicaFundo: {fileID: 0}
+  esconderAoPerderTarget: 1
 --- !u!114 &1386659003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6600,9 +6605,10 @@ MonoBehaviour:
   data: "Tradi\xE7\xE3o Tchokwe"
   localizacao: Nordeste de Angola
   modeloPrefab: {fileID: -6689036041284674117, guid: 35dea0d693d167e498303857b236e28a, type: 3}
-  rotacaoInicial: {x: 0, y: 0, z: 0}
+  rotacaoInicial: {x: -96.16, y: -4.2479, z: 0}
   narracao: {fileID: 8300000, guid: 333186bd58511e447a97c771eb8635c4, type: 3}
-  musicaFundo: {fileID: 0}
+  musicaFundo: {fileID: 8300000, guid: 13a8a589dd1bb7849b613e0dcf6cd9cc, type: 3}
+  esconderAoPerderTarget: 1
 --- !u!114 &1846509501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6848,6 +6854,7 @@ GameObject:
   - component: {fileID: 1961132888}
   - component: {fileID: 1961132887}
   - component: {fileID: 1961132891}
+  - component: {fileID: 1961132892}
   m_Layer: 0
   m_Name: ImageTarget_mwana
   m_TagString: Untagged
@@ -6862,7 +6869,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961132886}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d24ce8bc3c08b4b8787bbb1edd8128, type: 3}
   m_Name: 
@@ -6870,17 +6877,19 @@ MonoBehaviour:
   nome: Mwana Pwo
   descricao: "A Mwana Pwo, que significa \xABjovem mulher\xBB na l\xEDngua Tchokwe,
     \xE9 uma m\xE1scara que representa a mulher ideal e honra as antepassadas fundadoras
-    da linhagem. Apesar de representar uma mulher, \xE9 dan\xE7ada por homens durante
-    o Mukanda, o rito de inicia\xE7\xE3o dos rapazes. Os seus passos lentos e graciosos
-    servem para entreter e homenagear as m\xE3es dos iniciados. As cicatrizes tribais
-    no rosto, os olhos em fenda e o penteado de fibra fazem parte do seu desenho.
-    A tradi\xE7\xE3o \xE9 muito antiga, mas a sua idade exacta n\xE3o est\xE1 documentada."
+    da linhagem. Apesar de representar uma mulher, \xE9 dan\xE7ada e usada exclusivamente
+    por homens durante o Mukanda, o rito de inicia\xE7\xE3o dos rapazes. Os seus
+    passos lentos e graciosos servem para entreter e homenagear as m\xE3es dos iniciados.
+    As cicatrizes tribais no rosto, os olhos em fenda e o penteado de fibra fazem
+    parte do seu desenho. A tradi\xE7\xE3o \xE9 muito antiga, mas a sua idade exacta
+    n\xE3o est\xE1 documentada."
   data: "S\xE9c. XIX ou antes"
   localizacao: Lundas e Moxico
   modeloPrefab: {fileID: 4814140183114437194, guid: 90276512aa0d7c141a9c1b966efd8398, type: 3}
   rotacaoInicial: {x: 0, y: 0, z: 0}
-  narracao: {fileID: 8300000, guid: c49826aa530a5334894e59fd29c7674e, type: 3}
-  musicaFundo: {fileID: 8300000, guid: e3bd9e97ff504ae4287c9df5a82760be, type: 3}
+  narracao: {fileID: 8300000, guid: ce36e20a78631114583c99bc2d99f6ec, type: 3}
+  musicaFundo: {fileID: 8300000, guid: b748dced898a59b4eaf7678601b4d3b3, type: 3}
+  esconderAoPerderTarget: 1
 --- !u!114 &1961132888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6951,7 +6960,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1961132891}
+  mPreview: {fileID: 1961132892}
 --- !u!4 &1961132890
 Transform:
   m_ObjectHideFlags: 0
@@ -6968,6 +6977,33 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1961132891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961132886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d24ce8bc3c08b4b8787bbb1edd8128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonumentTarget
+  nome: 
+  descricao: "A Mwana Pwo, que significa \xABjovem mulher\xBB na l\xEDngua Tchokwe,
+    \xE9 uma m\xE1scara que representa a mulher ideal e honra as antepassadas fundadoras
+    da linhagem. Apesar de representar uma mulher, \xE9 dan\xE7ada por homens durante
+    o Mukanda, o rito de inicia\xE7\xE3o dos rapazes. Os seus passos lentos e graciosos
+    servem para entreter e homenagear as m\xE3es dos iniciados. As cicatrizes tribais
+    no rosto, os olhos em fenda e o penteado de fibra fazem parte do seu desenho.
+    A tradi\xE7\xE3o \xE9 muito antiga, mas a sua idade exacta n\xE3o est\xE1 documentada."
+  data: "S\xE9c. XIX ou antes"
+  localizacao: Lundas e Moxico
+  modeloPrefab: {fileID: 4814140183114437194, guid: 90276512aa0d7c141a9c1b966efd8398, type: 3}
+  rotacaoInicial: {x: 0, y: 0, z: 0}
+  narracao: {fileID: 8300000, guid: ce36e20a78631114583c99bc2d99f6ec, type: 3}
+  musicaFundo: {fileID: 8300000, guid: b748dced898a59b4eaf7678601b4d3b3, type: 3}
+  esconderAoPerderTarget: 1
+--- !u!114 &1961132892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
