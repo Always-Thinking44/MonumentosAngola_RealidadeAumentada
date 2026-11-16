@@ -18,9 +18,6 @@ public class MonumentTarget : MonoBehaviour
     public AudioClip narracao;
     public AudioClip musicaFundo;
 
-    [Header("Comportamento")]
-    public bool esconderAoPerderTarget = true;
-
     ObserverBehaviour observer;
 
     void Awake()
@@ -36,18 +33,13 @@ public class MonumentTarget : MonoBehaviour
     }
 
     void OnStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
-{
-    bool detectado = status.Status == Status.TRACKED;
-
-    if (detectado)
     {
+        // Nos monumentos, perder a imagem NÃO fecha nada: o painel, o modelo 3D
+        // e o áudio continuam a aparecer. Só fecham no botão X do painel
+        // (ou em "Voltar ao mapa", nos monumentos abertos a partir do mapa).
+        if (status.Status != Status.TRACKED) return;
+
         if (MonumentUI.Instance != null)
             MonumentUI.Instance.Mostrar(this);
     }
-    else
-    {
-        if (esconderAoPerderTarget && MonumentUI.Instance != null)
-            MonumentUI.Instance.AoPerderTarget(this);
-    }
-}
 }

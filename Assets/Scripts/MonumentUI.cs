@@ -35,9 +35,6 @@ public class MonumentUI : MonoBehaviour
     public AudioSource voz;
     [Range(0f, 1f)] public float volumeFundo = 0.25f;
 
-    [Header("Comportamento")]
-    public bool esconderAoPerderTarget = true;
-
     MonumentTarget atual;
     GameObject modeloAtual;
     int direcao = 1;
@@ -71,13 +68,6 @@ public class MonumentUI : MonoBehaviour
 
         CriarModelo(t.modeloPrefab, t.rotacaoInicial);
         IniciarAudio(t);
-    }
-
-    public void AoPerderTarget(MonumentTarget t)
-    {
-        if (atual != t) return;
-
-        Fechar();
     }
 
     // ---- Botões ----

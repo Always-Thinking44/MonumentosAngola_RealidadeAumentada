@@ -39,7 +39,13 @@ public class AngolaTarget : MonoBehaviour
 
     void OnStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
     {
-        // Só TRACKED: evita manter o painel depois de perder a imagem
+        if (AngolaUI.Instance == null) return;
+
+        // Enquanto o utilizador lê um monumento aberto no mapa, o estado deste alvo
+        // não interfere: o painel do monumento mantém-se aberto.
+        if (AngolaUI.Instance.EstaANavegarMonumento) return;
+
+        // Só TRACKED: evita manter o painel do mapa depois de perder a imagem
         bool detectado = status.Status == Status.TRACKED;
 
         if (detectado)

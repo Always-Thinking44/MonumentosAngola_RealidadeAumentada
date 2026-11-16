@@ -2520,7 +2520,7 @@ MonoBehaviour:
   rotacaoInicial: {x: 0, y: 0, z: 0}
   narracao: {fileID: 8300000, guid: ebffb3800f1df974a8f32433e26bc325, type: 3}
   musicaFundo: {fileID: 8300000, guid: 13a8a589dd1bb7849b613e0dcf6cd9cc, type: 3}
-  esconderAoPerderTarget: 0
+  esconderAoPerderTarget: 1
 --- !u!114 &716941872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5150,7 +5150,7 @@ MonoBehaviour:
   modeloPrefab: {fileID: 8771091787928289351, guid: 92f4098ac5884bd4cb124ee06afdf615, type: 3}
   rotacaoInicial: {x: 0, y: 0, z: 0}
   narracao: {fileID: 8300000, guid: 197325a9c53846942bae8a38a861d669, type: 3}
-  musicaFundo: {fileID: 0}
+  musicaFundo: {fileID: 8300000, guid: 13a8a589dd1bb7849b613e0dcf6cd9cc, type: 3}
   esconderAoPerderTarget: 1
 --- !u!114 &1386659003
 MonoBehaviour:
@@ -6988,7 +6988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d24ce8bc3c08b4b8787bbb1edd8128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonumentTarget
-  nome: 
+  nome: Mwana Pwo
   descricao: "A Mwana Pwo, que significa \xABjovem mulher\xBB na l\xEDngua Tchokwe,
     \xE9 uma m\xE1scara que representa a mulher ideal e honra as antepassadas fundadoras
     da linhagem. Apesar de representar uma mulher, \xE9 dan\xE7ada por homens durante
@@ -7108,7 +7108,7 @@ MonoBehaviour:
   tamanhoAlvo: 3.2
   velocidadeGiro: 20
   narracao: {fileID: 8300000, guid: f1656962eeb59a44c8f6ae94770cf8e7, type: 3}
-  musicaFundo: {fileID: 0}
+  musicaFundo: {fileID: 8300000, guid: 8e5f591340dc80e4f81d5102cf65e675, type: 3}
   esconderAoPerderTarget: 1
 --- !u!114 &2072391114
 MonoBehaviour:
