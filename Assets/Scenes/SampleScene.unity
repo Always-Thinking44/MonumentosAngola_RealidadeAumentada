@@ -2644,6 +2644,7 @@ MonoBehaviour:
   rotacaoInicial: {x: 0, y: 0, z: 0}
   narracao: {fileID: 8300000, guid: ebffb3800f1df974a8f32433e26bc325, type: 3}
   musicaFundo: {fileID: 8300000, guid: 13a8a589dd1bb7849b613e0dcf6cd9cc, type: 3}
+  esconderAoPerderTarget: 1
 --- !u!114 &716941872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5720,6 +5721,7 @@ MonoBehaviour:
   rotacaoInicial: {x: 0, y: 0, z: 0}
   narracao: {fileID: 8300000, guid: 197325a9c53846942bae8a38a861d669, type: 3}
   musicaFundo: {fileID: 8300000, guid: 13a8a589dd1bb7849b613e0dcf6cd9cc, type: 3}
+  esconderAoPerderTarget: 1
 --- !u!114 &1386659003
 MonoBehaviour:
   m_ObjectHideFlags: 0
