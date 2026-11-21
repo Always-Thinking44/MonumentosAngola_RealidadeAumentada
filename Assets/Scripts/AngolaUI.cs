@@ -77,6 +77,10 @@ public class AngolaUI : MonoBehaviour
     int camadaPreview;
     int mascaraPreview;
 
+    // Verdadeiro enquanto o utilizador está a ler um monumento aberto a partir do mapa.
+    // Nesse caso, o estado do alvo do mapa não deve fechar o painel do monumento.
+    public bool EstaANavegarMonumento => aNavegarMonumento;
+
     void Awake()
     {
         Instance = this;
@@ -176,7 +180,10 @@ public class AngolaUI : MonoBehaviour
         if (cameraPreview != null) cameraPreview.enabled = false;
         if (painel != null) painel.SetActive(false);
         if (barraNav != null) barraNav.SetActive(false);
-        if (MonumentUI.Instance != null) MonumentUI.Instance.Fechar();
+
+        // NÃO fechar o painel dos monumentos aqui: perder a imagem do mapa não deve
+        // apagar um monumento que o utilizador esteja a ver. O painel do monumento
+        // só fecha no seu próprio botão X (ou em "Voltar ao mapa").
     }
 
     // ---- Botões do painel ----
