@@ -71,3 +71,8 @@ crashlytics-build.properties
 # Assets temporários gerados pelo Android
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Cache local e backups de cena
+/.utmp/
+/[Aa]ssets/_Recovery/0 (1).unity
+/[Aa]ssets/_Recovery/0 (1).unity.meta
